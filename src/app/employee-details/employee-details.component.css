@@ -1,0 +1,23 @@
+.aParent div {
+    float:left;
+    clear: none; 
+    margin-top: 2%;
+}
+
+.Inputform{
+    margin-left: 15%;
+}
+.empimagediv{
+    margin-left: 5%;
+   
+}
+.profile-img{
+margin-left: 5%;
+border: 2px solid black;
+padding: 25%;
+}
+
+.button-row{
+    margin-left: 17%;
+    
+}

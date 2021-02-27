@@ -1,0 +1,14 @@
+.navbar{
+    justify-content: space-between;
+    
+}
+
+.active{
+    color: white;
+    background-color:teal;
+}
+
+.navbarspan > a{
+    margin-left:5%;
+    margin-right:5%;
+  }

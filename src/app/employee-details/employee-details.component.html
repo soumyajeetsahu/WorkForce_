@@ -1,0 +1,43 @@
+
+<div class="aParent">
+  <div class="empimagediv">
+    <div class="profile-img">
+      <img  class="images" [src]='employee.avatar'/>
+    </div>
+    <div class="button-row">
+      <button mat-raised-button style='margin-right:16px;' color="primary">Update</button>
+      <button mat-raised-button color="accent">Remove</button>
+    </div>
+  </div>
+  <div >
+    <div class="Inputform">
+      <p>
+        <span>
+          EMPLOYEE ID: 
+        </span>
+        <span> {{employee.id}}</span>
+      </p>
+      <p>
+        <span>
+          FIRST NAME: 
+        </span>
+        <span> {{employee.FirstName}}</span>
+      </p>
+
+      <p>
+        <span>
+          LAST NAME: 
+        </span>
+        <span> {{employee.LastName}}</span>
+      </p>
+
+      <p>
+        <span>
+          EMAIL ADDRESS: 
+        </span>
+        <span> {{employee.Email}}</span>
+      </p>
+    </div>
+     
+    </div>
+  </div>

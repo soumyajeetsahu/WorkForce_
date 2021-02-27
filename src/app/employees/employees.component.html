@@ -1,0 +1,37 @@
+<div class="Showemployeelist">
+
+
+<div class="employeecount">
+    <span class="mat-headline">
+     <span> Total of </span>
+     <span style="color: goldenrod;"> {{employee.length}}</span>
+     <span> employees</span>
+     </span> 
+     <div class="pagination">
+        <mat-paginator #paginator [pageSize]="pageSize" [pageSizeOptions]="[4, 8]" [showFirstLastButtons]="true" [length]="totalSize"
+        [pageIndex]="currentPage" (page)="handlePage($event)">
+        </mat-paginator>
+
+    </div>
+ </div>
+
+ 
+<div *ngFor="let emp of dataSource">
+
+    <div class="Employeeslist">
+        <div class="example-card" (click)="ViewEmployee(emp.id)">
+            <mat-card >
+                <mat-card-header>
+                </mat-card-header>
+                <img mat-card-image [src]='emp.avatar' alt="Photo of a Shiba Inu">
+                <mat-card-actions class="footermatcard">
+                {{emp.FirstName}} {{emp.LastName}}
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>
+
+
+    
+</div>

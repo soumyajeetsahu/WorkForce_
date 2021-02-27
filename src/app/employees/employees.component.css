@@ -1,0 +1,33 @@
+.example-card{
+    padding: 2%;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 3%;
+    float: left;
+    cursor: pointer;
+  }
+
+  .employeecount{
+    text-align: right;
+    margin-right: 20%;
+    margin-top: 1%;
+  }
+  .footermatcard{
+      text-align: center;
+      background-color: cornflowerblue;
+  }
+
+  .Employeeslist{
+    max-width: 100%;
+    margin-left: 13%;
+    max-height: 90%;
+  }
+
+.pagination{
+  margin-top: 2%;
+}
+
+.Showemployeelist{
+  vertical-align:middle;
+  
+}

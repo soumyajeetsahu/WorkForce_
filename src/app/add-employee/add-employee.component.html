@@ -1,0 +1,48 @@
+
+
+<div class="aParent">
+<div class="profile-img">
+    <img  class="images" src="assets/Images/p-01.png"/>
+</div>
+<div class="Inputform">
+  <form   (ngSubmit)="AddEmployee(employee)">
+    <p>
+        <mat-form-field appearance="legacy">
+          <mat-label>First Name</mat-label>
+          <input matInput placeholder="first name" name="FirstName" [(ngModel)]="employee.FirstName" #FirstName="ngModel"
+           >
+          <mat-error *ngIf="firstname.invalid">{{getErrorMessage()}}</mat-error>
+          <mat-icon matSuffix>badge</mat-icon>
+          
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="standard">
+          <mat-label>Last Name</mat-label>
+          <input matInput placeholder="last name" name="LastName" [(ngModel)]="employee.LastName">
+          <mat-icon matSuffix>badge</mat-icon>
+          <mat-error *ngIf="lastname.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Email Address</mat-label>
+          <input matInput placeholder="email" name="Email" [(ngModel)]="employee.Email" required >
+          <mat-icon  matSuffix>mail</mat-icon>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Upload Photo</mat-label>
+          <input matInput placeholder="assets/Images/p-01.png" name="imgpath" [(ngModel)]="employee.avatar">
+          <mat-icon matSuffix>photo_size_select_actual</mat-icon>
+        </mat-form-field>
+      </p>
+
+      <p>
+        <button mat-raised-button color="primary">Add Employee</button>
+      </p>
+    </form>
+</div>
+</div>
