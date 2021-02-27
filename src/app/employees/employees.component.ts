@@ -1,6 +1,5 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator, PageEvent } from '@angular/material/paginator';
-import { MatTableDataSource } from '@angular/material/table';
 import { Router } from '@angular/router';
 import { EmployeeService } from '../employee-service.service';
 import { Employee } from '../model/employee.model';
@@ -13,14 +12,11 @@ import { Employee } from '../model/employee.model';
 export class EmployeesComponent implements OnInit {
   employee!: Employee[];
   pageEvent!: PageEvent;
-  employee1!: Employee[];
-  page = 0;
-  size = 4;
-public pageSize = 4;
-public currentPage = 0;
-public totalSize = 0;
-public displayedColumns = ['', '', '', '', ''];
-public dataSource: any; 
+  public pageSize = 4;
+  public currentPage = 0;
+  public totalSize = 0;
+  public displayedColumns = ['', '', '', '', ''];
+  public dataSource: any; 
 
 @ViewChild(MatPaginator) paginator!: MatPaginator;
   employeecount= 50;
